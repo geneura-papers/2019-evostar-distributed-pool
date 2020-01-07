@@ -64,6 +64,6 @@ algorithm implementation, performance evaluation.
 This paper has been supported in part by projects DeepBio (TIN2017-85727-C4-2-P) and AMED (co-funded by European Regional Development Fund and the region Normandy).
 
 \bibliographystyle{IEEETran}
-\bibliography{geneura,concurrent,perl6}
+\bibliography{geneura,concurrent,bibliografia}
 
 \end{document}
