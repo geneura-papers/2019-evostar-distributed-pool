@@ -1,16 +1,14 @@
-\documentclass[runningheads]{llncs}
-
-%%% Local Variables:
-%%% ispell-local-dictionary: "english"
-%%% End:
-\usepackage[utf8]{inputenc}
-\usepackage{booktabs} % For formal tables
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
 \usepackage{graphicx}
-
+\usepackage{textcomp}
+\usepackage{xcolor}
 
 \begin{document}
-\SweaveOpts{concordance=TRUE}
-%\SweaveOpts{concordance=TRUE}
 
 <<setup, cache=FALSE,echo=FALSE>>=
 library(ggplot2)
@@ -19,20 +17,19 @@ library(ggthemes)
 
 \title{}
 
- \author{A\inst{1}
- \and
- B\inst{1}
- \and
- C\inst{1}
- \and
- D\inst{1}
-}
+\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID} % Add your name here
+\and
+\IEEEauthorblockN{Juan J. Merelo-Guervós}
+\IEEEauthorblockA{\textit{Dept. of Computer Architecture and Technology} \\
+\textit{University of Granada}\\
+Granada, Spain \\
+jmerelo@ugr.es}
 
-\institute{%
-   University Z\\
-   \email{an@ema.il}
 }
-
 %\authorrunning{Merelo et al.}
 %\titlerunning{Exploring concurrent and stateless EAs}
 
@@ -41,8 +38,10 @@ library(ggthemes)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
 \end{abstract}
-\keywords{Concurrent algorithms, distributed computing, stateless algorithms,
-algorithm implementation, performance evaluation.}
+\begin{IEEEkeywords}
+  Concurrent algorithms, distributed computing, stateless algorithms,
+algorithm implementation, performance evaluation.
+\end{IEEEkeywords}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
@@ -62,13 +61,9 @@ algorithm implementation, performance evaluation.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Acknowledgements}
 
-%   This paper has been supported in part by projects DeepBio (TIN2017-85727-C4-2-P) and AMED (co-funded by European Regional Development Fund and the region Normandy).
+This paper has been supported in part by projects DeepBio (TIN2017-85727-C4-2-P) and AMED (co-funded by European Regional Development Fund and the region Normandy).
 
-Acks\\
-Taking\\
-This much space
-
-\bibliographystyle{splncs04}
+\bibliographystyle{IEEETran}
 \bibliography{geneura,concurrent,perl6}
 
 \end{document}
