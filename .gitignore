@@ -245,3 +245,6 @@ TSWLatexianTemp*
 
 *.pdf
 volunteer-wasm.tex
+
+.RData
+.RHistory
